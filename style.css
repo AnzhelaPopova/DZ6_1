@@ -1,0 +1,90 @@
+.header {
+     background: grey; 
+     grid-area: header;
+     padding-top: 10px;
+     text-align: center;
+    } 
+
+.main {
+    background: rgb(241, 236, 183); 
+    grid-area: main;
+    display: grid;
+    align-content: space-between;
+    padding-top: 10px;
+    text-align: center;
+} 
+
+.aside {
+    background: rgb(194, 240, 183); 
+    grid-area: aside;
+    padding-top: 10px;
+    text-align: center;
+}
+
+ .footer {
+    background: grey; 
+    grid-area: footer;
+    text-align: center;
+    height: 100px;
+    display: grid;
+    align-items: center;
+ } 
+
+ .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 1fr 10%;
+    height: 90vh;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+ }
+
+ .item1 {
+    grid-area: item1;
+    text-align: center;
+    padding-top: 10px;
+ }
+
+ .item2 {
+    grid-area: item2;
+    text-align: center;
+    padding-top: 10px;
+ }
+
+ .item3 {
+    grid-area: item3;
+    text-align: center;
+    padding-top: 10px;
+    }
+
+ .container_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    height: 20vh;
+    gap: 10px;
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item3" ;
+    margin: 10px;
+ }
+
+ .container_main  div {
+    background: rgb(236, 212, 104); 
+    gap: 10px;
+ }
+
+ .container_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+ }
+
+ .container_footer div {
+    background: white; 
+    margin: 10px;
+    padding: 10px;
+ }
+
